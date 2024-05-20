@@ -255,19 +255,19 @@
                     </ul>
                     <div class="tab-content">
                      {{--TAB-1--}}
-                     @foreach($items as $main_item)
-                        <div id="{{$main_item['tab']}}" class="tab-pane fade show p-0 active">
+                     @foreach( $items as $main_item => $j)
+                        <div id="{{$j['tab']}}" class="tab-pane fade show p-0 active">
                             <div class="row g-4">
-                                @foreach($main_item['my_items'] as $i => $j)
+                                @foreach($j['my_items'] as $index => $i )
                                  <div class="col-lg-6">
                                     <div class="d-flex align-items-center">
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>{{$main_item['my_items']['name']}}</span>
-                                                <span class="text-primary">{{$main_item['my_items']['number']}}</span>
+                                                <span>{{$i['name']}}</span>
+                                                <span class="text-primary">{{$i['number']}}</span>
                                             </h5>
-                                            <small class="fst-italic">{{$main_item['my_items']['description']}}</small>
+                                            <small class="fst-italic">{{$i['description']}}</small>
                                         </div>
                                     </div>
                                 </div>
