@@ -264,7 +264,7 @@
                                         <img class="flex-shrink-0 img-fluid rounded" src="img/menu-1.jpg" alt="" style="width: 80px;">
                                         <div class="w-100 d-flex flex-column text-start ps-4">
                                             <h5 class="d-flex justify-content-between border-bottom pb-2">
-                                                <span>{{$main_item['name']}}</span>
+                                                <span>{{$main_item['my_items']['name']}}</span>
                                                 <span class="text-primary">{{$main_item['my_items']['number']}}</span>
                                             </h5>
                                             <small class="fst-italic">{{$main_item['my_items']['description']}}</small>
@@ -276,7 +276,7 @@
                             </div>
                         </div>
                         @endforeach
-                        {{--TAB-2--}}
+                        {{--TAB-2--
                         <div id="tab-2" class="tab-pane fade show p-0">
                             <div class="row g-4">
                                 <div class="col-lg-6">
