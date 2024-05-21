@@ -256,7 +256,7 @@
                     <div class="tab-content">
                      {{--TAB-1--}}
                      @foreach( $items as $main_item => $j)
-                        <div id="{{$j['tab']}}" class="tab-pane fade show p-0 active">
+                        <div id="{{$j['tab']}}" class="tab-pane fade {{($j['tab'] == 'tab-1') ? 'show' : ''}} p-0 active">
                             <div class="row g-4">
                                 @foreach($j['my_items'] as $index => $i )
                                  <div class="col-lg-6">
@@ -740,7 +740,7 @@
                             &copy; <a class="border-bottom" href="#">Your Site Name</a>, All Right Reserved. 
 							
 							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-							Designed By <a class="border-bottom" href="https://htmlcodex.com">HTML Codex</a>
+							Designed By <a class="border-bottom" href="https://peneh.com">Peneh</a>
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
